@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import Cards from "./components/Cards";
+import Card from "./components/Card";
 
 class App extends React.Component {
   render() {
     return (
       <Container>
-        <Cards>card</Cards>
+        <Cards>Cards
+          <Card></Card>
+        </Cards>
       </Container>
     );
   }
