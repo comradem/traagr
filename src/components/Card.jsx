@@ -19,7 +19,7 @@ const Container = styled.div`
   background: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0.1, 0.2);
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   border-color: black;
   border-width: thick;

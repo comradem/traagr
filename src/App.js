@@ -8,7 +8,11 @@ class App extends React.Component {
     return (
       <Container>
         <Cards>Cards
-          <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
+        <Card></Card>
         </Cards>
       </Container>
     );
@@ -21,6 +25,6 @@ const Container = styled.div`
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-flow: row nowrap;
-  padding-top: 40px;
+  flex-wrap: no wrap;
+
 `;
