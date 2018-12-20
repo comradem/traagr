@@ -4,7 +4,7 @@ import url from "../images/logo.svg";
 
 const Card = ({ data }) => (
   <Container>
-    {data} card
+    {data}
     <Image src={url} />
     <Description>desc</Description>
   </Container>
@@ -13,16 +13,14 @@ const Card = ({ data }) => (
 export default Card;
 
 const Container = styled.div`
-  width: 25%;
-  height: 25%;
+  width: 30%;
+  height: 30%;
   min-height: 100px;
   background: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0.1, 0.2);
   box-sizing: border-box;
+  border-radius: 15px;
   padding: 5px;
-  border-radius: 10px;
-  border-color: black;
-  border-width: thick;
 `;
 
 const Image = styled.img`
@@ -31,6 +29,7 @@ const Image = styled.img`
   height: 150px;
   margin: 0;
   border-radius: 20px;
+  border-style: solid;
 `;
 
 const Description = styled.div`
@@ -40,8 +39,8 @@ const Description = styled.div`
   padding: 0.5rem 0;
   margin: 0.5rem 1rem;
   width: 11rem;
-  background: white;
+  background: #abc;
   color: blue;
-  border: 2px solid white;
+  border: 5px black;
   font: arial  bold 12px/30px Georgia, serif;
 `;

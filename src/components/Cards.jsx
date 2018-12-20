@@ -12,10 +12,8 @@ const Container = styled.div`
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   padding: 20px;
-  border-radius: 1px;
-  border-color: black;
-  border-width: thick;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  justify-content: space-around;
 `;

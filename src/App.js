@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <Container>
-        <Cards>Cards
+        <Cards>
         <Card></Card>
         <Card></Card>
         <Card></Card>
