@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import url from "../images/logo.svg";
+import url from "../../images/logo.svg";
 
 const Card = ({ data }) => (
   <Container>

@@ -1,20 +1,22 @@
-import React from "react";
+import React, {Fragment} from "react";
 import styled from "styled-components";
-import Cards from "./components/Cards";
-import Card from "./components/Card";
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+
+
+import EventPicker from '../src/components/pages/EventPicker'
+import  Error from '../src/components/pages/Error'
 
 class App extends React.Component {
   render() {
     return (
-      <Container>
-        <Cards>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        </Cards>
-      </Container>
+      <BrowserRouter>
+        <Fragment>
+          <Switch>
+            <Route path="/events" component={EventPicker} exact/>
+            <Route component={Error}/>
+          </Switch>
+        </Fragment>
+      </BrowserRouter>
     );
   }
 }
