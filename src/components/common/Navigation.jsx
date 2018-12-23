@@ -3,9 +3,18 @@ import { withRouter } from 'react-router';
 import  styled from 'styled-components';
 
 
+const links = [
+    {id: 'events', route: '/events', label: 'events'}
+];
+
+
 const Navigation = props =>{
     return (
-        <Bar>hell</Bar>
+        <Bar>The shadows writhe around me
+            {
+                links.map(link => <Link onClick = {()=> props.history.push(link.route)}>{link.label}</Link>)
+            }
+        </Bar>
     );
 }
 
@@ -22,4 +31,13 @@ const Bar = styled.div`
   align-items: center;
   box-sizing: border-box;
   padding: 0 40px;
+`;
+
+const Link = styled.div`
+font-size: 14px;
+font-weight: 500;
+color: #fff;
+margin-right: 20px;
+text-transform: uppercase;
+cursor: pointer;
 `;
