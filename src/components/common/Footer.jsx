@@ -1,13 +1,14 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import  styled from 'styled-components';
+import styled from 'styled-components';
 
 
 const links = [
-    {id: 'events', route: '/events', label: 'events'}
+    {id: 'contact', route: '/contact', label: 'contact'},
+    {id: 'info', route: '/info', label: 'info'}
 ];
 
-const Navigation = props =>{
+const Footer = props =>{
     return (
         <Bar>The shadows writhe around me
             {
@@ -18,7 +19,8 @@ const Navigation = props =>{
 }
 
 
-export default withRouter(Navigation);
+
+export default withRouter(Footer);
 
 
 const Bar = styled.div`
@@ -30,6 +32,8 @@ const Bar = styled.div`
   align-items: center;
   box-sizing: border-box;
   padding: 0 40px;
+  position: fixed;
+  bottom: 0;
 `;
 
 const Link = styled.div`
