@@ -30,16 +30,19 @@ export default ToggleButton;
 
 
 const TBtnStyle = styled.div`
-width: 20px;
+width: 100px;
 min-width: 20px;
+height: 80px;
 min-height: 20px;
-height: 20px;
 display: flex;
-background: ${({ status }) => status ? '#cdcdcd' : '#ababab'};
+background: ${({ status }) => status ? '#c6c3b8' : '#ddb72c'};
 align-items: center;
 justify-content: center;
 margin-right: 10px;
 cursor: pointer;
-border-radius: 50%;
-
+border-radius: 5%;
+text-transform: capitalize;
+&:hover {
+    background: #000;
+  }
 `;
