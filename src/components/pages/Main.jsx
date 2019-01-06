@@ -5,7 +5,7 @@ import ToggledButton from "../common/ToggleButton";
 const Main = () => {
   return <Container>
       <ToggledButton status='true' />
-      <ToggledButton status='false' />
+      <ToggledButton status={false} />
   </Container>;
 };
 
