@@ -6,8 +6,7 @@ import React from 'react';
 
 const Error = () => {
     return (
-        <div>
-            <p1>Error Page</p1></div>
+        <div>Error Page</div>
     );
 }
 
