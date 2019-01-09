@@ -19,8 +19,7 @@ class ToggleButton extends React.Component {
 
     toggleStatus = () => {
         this.setState(
-            prevStatus => ({status : !prevStatus.status}), 
-            this.props.onChange(this.state.status)
+            prevStatus => ({status : !prevStatus.status})
             );
     }
 }
