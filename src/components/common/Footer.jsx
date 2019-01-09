@@ -12,7 +12,8 @@ const Footer = props =>{
     return (
         <Bar>The shadows writhe around me
             {
-                links.map(link => <Link onClick = {()=> props.history.push(link.route)}>{link.label}</Link>)
+                links.map(link => <Link onClick = {()=> props.history.push(link.route)}
+                key = {link.id}>{link.label}</Link>)
             }
         </Bar>
     );
