@@ -43,6 +43,6 @@ cursor: pointer;
 border-radius: 5%;
 text-transform: capitalize;
 &:hover {
-    background: #000;
+    background: #999;
   }
 `;

@@ -21,6 +21,9 @@ const Container = styled.div`
   box-sizing: border-box;
   border-radius: 15px;
   padding: 5px;
+  &:hover {
+    transform: scale(1.5);
+  }
 `;
 
 const Image = styled.img`
