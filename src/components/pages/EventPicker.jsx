@@ -16,6 +16,7 @@ const EventPicker = () => {
             <Card/>
             <Card/>
             <Card/>
+            <Card />
         </Cards>
     );
 }

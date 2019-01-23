@@ -16,13 +16,14 @@ const Container = styled.div`
   width: 30%;
   height: 30%;
   min-height: 100px;
-  background: #fff;
+  background: #c0c4c4;
   box-shadow: 0 5px 20px rgba(0, 0, 0.1, 0.2);
   box-sizing: border-box;
   border-radius: 15px;
   padding: 5px;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.125);
+    transition: all 0.125s ease-in-out;
   }
 `;
 
