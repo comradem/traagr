@@ -29,10 +29,10 @@ const Container = styled.div`
 
 const Image = styled.img`
   flex: 0 0 96px;
-  width: 150px;
-  height: 150px;
+  width: 45%;
+  height: 25%;
   margin: 0;
-  border-radius: 20px;
+  border-radius: 10px;
   border-style: solid;
 `;
 
