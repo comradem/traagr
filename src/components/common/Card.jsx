@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import url from "../../images/logo.svg";
+import ToggleButton from '../common/ToggleButton';
 
 const Card = ({ data }) => (
   <Container>
-    {data}
-    <Image src={url} />
-    <Description>desc</Description>
+    <Image src= {data.img}/>
+    <Description>{data.desc}</Description>
+    <ToggleButton text = '+'></ToggleButton>
   </Container>
 );
 
