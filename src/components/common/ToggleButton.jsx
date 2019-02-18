@@ -11,7 +11,6 @@ class ToggleButton extends React.Component {
         text : this.props.text
      }
     render() {
-        const { status } = this.state;
         const { text } = this.state;
         return (
             <TBtnStyle onClick = {this.toggleStatus}>{text}</TBtnStyle>    

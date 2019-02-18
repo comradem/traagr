@@ -4,7 +4,8 @@ import  styled from 'styled-components';
 
 
 const links = [
-    {id: 'events', route: '/events', label: 'events'}
+    {id: 'events', route: '/events', label: 'events'},
+    {id: 'basket', route: '/basket', label: 'basket'}
 ];
 
 const Navigation = props =>{

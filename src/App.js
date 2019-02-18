@@ -9,6 +9,7 @@ import Footer from './components/common/Footer';
 import Info from './components/pages/Info';
 import Contact from './components/pages/Contact';
 import Main from './components/pages/Main';
+import Basket from './components/pages/Basket';
 
 
 
@@ -23,6 +24,7 @@ class App extends React.Component {
             <Route exact path="/events" component={EventPicker}/>
             <Route exact path="/info" component={Info}/>
             <Route exact path="/contact" component={Contact}/>
+            <Route exact path="/basket" component={Basket}/>
             <Route component={Error}/>
           </Switch>
           <Footer/>

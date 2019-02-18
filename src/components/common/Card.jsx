@@ -29,8 +29,8 @@ const Container = styled.div`
 
 const Image = styled.img`
   flex: 0 0 96px;
-  width: 150px;
-  height: 150px;
+  width: 70%;
+  height: 50%;
   margin: 0;
   border-radius: 20px;
   border-style: solid;

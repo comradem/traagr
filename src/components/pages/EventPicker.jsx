@@ -7,7 +7,7 @@ import Cards from '../common/Cards'
 import Card from '../common/Card'
 
 const list = [
-    {id: 'c1', img: require('../../images/img1.png'), desc: 'short desc for test1'},
+    {id: 'c1', img: require('../../images/img1.png'), desc: 'short desc for test1 sho for test1'},
     {id: 'c2', img: require('../../images/img2.png'), desc: 'short desc for test2'},
     {id: 'c3', img: require('../../images/img3.png'), desc: 'short desc for test3'},
     {id: 'c4', img: require('../../images/img4.png'), desc: 'short desc for test4'},
