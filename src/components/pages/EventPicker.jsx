@@ -21,7 +21,7 @@ const EventPicker = () => {
     return (
         <Cards>
             {
-                list.map(card => <Card onClick = {() => {console.log("test")}} data = {card} key={card.id}/>)
+                list.map(card => <Card card = {card} key={card.id}/>)
             }
         </Cards>
     );

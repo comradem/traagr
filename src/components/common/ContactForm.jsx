@@ -6,6 +6,7 @@ class ContactForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            name: this.props.contactName,
             email: this.props.contactEmail,
             subject: this.props.subjectEmail,
             content: this.props.contentEmail
@@ -28,11 +29,10 @@ class ContactForm extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <Container>
                     <Form>
-                        <label>
-                            Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-                        </label>
-                        <input type="submit" value="Submit" />
+                        <Input type="text" defaultValue="How we adress you?.."></Input>
+                        <Input type="text" defaultValue="email@example.com"></Input>
+                        <textarea className="Input" placeholder="write some text"></textarea>
+                        <Button>Submit</Button>
                     </Form>
                 </Container>
             </form>
@@ -43,11 +43,17 @@ class ContactForm extends React.Component {
 export default ContactForm;
 
 const Container = styled.div`
-    width: 90vw;
-    height: 90vw;
-    background: #FFF;
-    box-sizing: border-box;
-    padding: 0 40px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+`;
+
+
+const Button = styled.button`
+    padding: 0.25em 1em;
+    border: 2px black;
+    border-radius: 3px;
+
 `;
 
 const Form = styled.div`
@@ -56,7 +62,19 @@ const Form = styled.div`
     background: #AAA;
     display: flex;
     justify-content: flex-center;
+    flex-direction: column;
     align-items: center;
     box-sizing: border-box;
     padding: 0 40px;
+`;
+
+const Input = styled.input`
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
 `;

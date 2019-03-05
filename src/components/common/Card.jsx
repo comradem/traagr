@@ -1,16 +1,29 @@
-import React from "react";
+import React, { Component } from 'react';
 import styled from "styled-components";
 import ToggleButton from '../common/ToggleButton';
 
-const Card = ({ data }) => (
-  <Container>
-    <Image src= {data.img}/>
-    <Description>{data.desc}</Description>
-    <ToggleButton text = '+'></ToggleButton>
-  </Container>
-);
 
-export default Card;
+
+
+export default class Card extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      img: this.props.card.img,
+      desc: this.props.card.desc,
+      key: this.props.card.key
+    }
+  }
+  render() {
+    return (
+      <Container>
+      <Image src= {this.state.img}/>
+      <Description>{this.state.desc}</Description>
+      <ToggleButton text = '+'></ToggleButton>
+    </Container>
+    )
+  }
+}
 
 const Container = styled.div`
   width: 30%;
@@ -29,13 +42,8 @@ const Container = styled.div`
 
 const Image = styled.img`
   flex: 0 0 96px;
-<<<<<<< HEAD
   width: 70%;
   height: 50%;
-=======
-  width: 45%;
-  height: 25%;
->>>>>>> 64a79267b8e20cacd4557eda80dac20d0699ff91
   margin: 0;
   border-radius: 10px;
   border-style: solid;
