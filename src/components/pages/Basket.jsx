@@ -1,14 +1,18 @@
-import React from "react";
+
 import styled from "styled-components";
 
+import React, { Component } from 'react'
 
-const Basket = () => {
-  return <Container>
-    this should contain list of the items
-  </Container>;
-};
+export default class Basket extends Component {
 
-export default Basket;
+  render() {
+    return (
+      <Container>
+        this should contain list of the items
+      </Container>
+    )
+  }
+}
 
 const Container = styled.div`
   width: 95vw;
