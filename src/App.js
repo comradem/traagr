@@ -18,7 +18,6 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Fragment>
-          <Navigation/>
           <Switch>
             <Route exact path="/" component={Main}/>
             <Route exact path="/events" component={EventPicker}/>
