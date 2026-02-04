@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "create-react-app": "^2.1.1",
+    "create-react-app": "^5.1.0",
     "graphql": "^14.0.2",
     "jshint": "^2.9.7",
     "mysql": "^2.16.0",
